@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                
+                <img src="img2.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li> 
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Passionate Learner</p>
+                <h1>Hi, I'm <span>Rakshita <br></span>from India</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>My biggest strength is my passion for learning new things. As a quick learner, I enjoy learning new skills and applying them to my work</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-links " onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                  <div class="tab-contents active-tab">
+                    <ul>
+                        <li><span>Python</span><br>Basic Game Develelopement</li>
+                        <li><span>Web-Dev</span><br>Web App Develeopement</li>
+                        <li><span>Coursera Courses</span><br>Leading People and Team</li>
+                    </ul>
+                  </div>
+                </div>
+               
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------services-------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>web dev</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, modi eos sed facilis ratione exercitationem tempore ad laboriosam nisi aperiam ex numquam assumenda similique accusamus rem architecto! Itaque, eum ab.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <h2>python</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, modi eos sed facilis ratione exercitationem tempore ad laboriosam nisi aperiam ex numquam assumenda similique accusamus rem architecto! Itaque, eum ab.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <h2>coursera</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, modi eos sed facilis ratione exercitationem tempore ad laboriosam nisi aperiam ex numquam assumenda similique accusamus rem architecto! Itaque, eum ab.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------my work-------------->
+    <div id="portfolio">
+       <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="img3.png">
+                <div class="layer">
+                    <h3>Madlib Game</h3>
+                    <p>fun generator game</p>
+                    <a href="#"><i class="fas fa external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img4.png">
+                <div class="layer">
+                    <h3>Coursera</h3>
+                    <p>
+                        Leading People And Team </p>
+                    <a href="#"><i class="fas fa external-link-alt"></i></a> 
+                </div>
+            </div>
+            <div class="work">
+                <img src="img5.png">
+                <div class="layer">
+                    <h3>My Portfolio</h3>
+                    <p>Knowing your capabilities</p>
+                    <a href="#"><i class="fas fa external-link-alt"><i></a>
+                </div>
+        </div>
+       
+        </div>
+        <a href="#" class="btn">See More</a>
+       </div>
+    </div>
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p>rakshitabhardwaj23@gmail.com</p>
+                    <p>123456789</p>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name"  placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+       var tablinks = document.getElelementsByClassName("tab-links");
+       var tabcontents= document.getElelementsByClassNam("tab-contents");
+       function opentab(tabname){
+        for( tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for( tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.class.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+       }
+    </script>
+</body>
+</html>

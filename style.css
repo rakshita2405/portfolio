@@ -160,7 +160,9 @@ display: block;
  }
  .services-list div:hover{
     background: #ff004f;
- } */
+    transform: translateY(-10px);
+
+ } 
 #portfolio{
         padding: 50px 0;
  }
